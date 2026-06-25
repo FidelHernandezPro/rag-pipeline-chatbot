@@ -52,6 +52,7 @@ jobs:
           aws lambda invoke \
             --function-name p1-doc-assistant \
             --cli-binary-format raw-in-base64-out \
+            --cli-read-timeout 120 \
             --payload '{"body": "{\"question\": \"warmup\"}"}' \
-            /tmp/warmup.json
-          cat /tmp/warmup.json
+            /tmp/warmup.json || true
+          cat /tmp/warmup.json 2>/dev/null || echo "Warm-up timed out - Lambda will warm on first request"
