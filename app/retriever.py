@@ -42,7 +42,7 @@ def _call_bedrock(prompt: str) -> tuple[str, int, int]:
         import boto3
         _bedrock_client = boto3.client("bedrock-runtime", region_name="us-east-1")
     response = _bedrock_client.invoke_model(
-        modelId="anthropic.claude-haiku-4-5-20251001-v1:0",
+        modelId="us.anthropic.claude-haiku-4-5-20251001-v1:0",
         body=json.dumps({
             "anthropic_version": "bedrock-2023-05-31",
             "max_tokens": 512,
