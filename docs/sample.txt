@@ -1,0 +1,13 @@
+Acme Corp Employee Handbook
+
+Vacation Policy
+Employees are entitled to 15 days of paid vacation per year. Vacation days must be approved by your manager at least 2 weeks in advance. Unused vacation days can be carried over to the next year up to a maximum of 5 days.
+
+Remote Work Policy
+Employees may work remotely up to 3 days per week. Remote work must be approved by your department head. Employees are expected to be available during core hours of 10am to 3pm in their local timezone.
+
+Expense Policy
+Business expenses up to $50 can be reimbursed without prior approval. Expenses above $50 require manager approval before purchase. All expense claims must be submitted within 30 days with receipts.
+
+Health Benefits
+Acme Corp provides full medical, dental, and vision coverage for all full-time employees. Coverage begins on the first day of the month following your start date. Dependents can be added during open enrollment in November.

@@ -1,0 +1,7 @@
+.env
+.env.lambda
+p1-env/
+mlflow.db
+mlruns/
+__pycache__/
+*.pyc
