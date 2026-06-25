@@ -43,3 +43,15 @@ jobs:
           aws lambda update-function-code \
             --function-name p1-doc-assistant \
             --image-uri $REGISTRY/$REPOSITORY:$IMAGE_TAG
+
+      - name: Wait for Lambda update
+        run: aws lambda wait function-updated --function-name p1-doc-assistant
+
+      - name: Warm up Lambda
+        run: |
+          aws lambda invoke \
+            --function-name p1-doc-assistant \
+            --cli-binary-format raw-in-base64-out \
+            --payload '{"body": "{\"question\": \"warmup\"}"}' \
+            /tmp/warmup.json
+          cat /tmp/warmup.json
